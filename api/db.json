@@ -1,0 +1,50 @@
+{
+  "streams": [
+    {
+      "title": "Stream 1",
+      "description": "This is an awesome stream",
+      "id": 1
+    },
+    {
+      "title": "Hello",
+      "description": "World",
+      "id": 2
+    },
+    {
+      "title": "This Stream ",
+      "description": "I created this stream",
+      "userID": "105784538455179159129",
+      "id": 3
+    },
+    {
+      "description": "This is a stream about cars ",
+      "title": "Car Stream",
+      "userID": "105784538455179159129",
+      "id": 4
+    },
+    {
+      "description": "This is a stream about bikes ",
+      "title": "Bikes ",
+      "userID": "105784538455179159129",
+      "id": 5
+    },
+    {
+      "description": "This is a stream about buses ",
+      "title": "Buses",
+      "userID": "105784538455179159129",
+      "id": 6
+    },
+    {
+      "title": "Unexpected Behavior ",
+      "description": "Did not expect that!",
+      "userID": "105784538455179159129",
+      "id": 7
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "This wont be visible the first time! ",
+      "userID": "105784538455179159129",
+      "id": 8
+    }
+  ]
+}
