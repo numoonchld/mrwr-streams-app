@@ -13,20 +13,30 @@ class StreamEdit extends React.Component {
     this.props.fetchStream(this.props.match.params.id);
   }
 
-  onSubmit = () => {
-
-  }
+  onSubmit = (formValues) => {
+    console.log(formValues)
+    this.props.editStream(this.props.stream.id, formValues)
+  };
 
   render() {
     console.log(this.props);
     if (!this.props.stream) {
       return <>Loading...</>;
     }
-    return <><div>
-      <h3>Edit a Stream</h3>
-      <StreamForm onSubmit={this.onSubmit} initialValues={this.props.stream} />
-    </div>
-    </>;
+
+    const { title, description } = this.props.stream;
+
+    return (
+      <>
+        <div>
+          <h3>Edit a Stream</h3>
+          <StreamForm
+            onSubmit={this.onSubmit}
+            initialValues={{ title, description }}
+          />
+        </div>
+      </>
+    );
   }
 }
 
@@ -34,4 +44,6 @@ const mapStateToProps = (state, ownProps) => {
   return { stream: state.streams[ownProps.match.params.id] };
 };
 
-export default connect(mapStateToProps, { fetchStream, editStream })(StreamEdit);
+export default connect(mapStateToProps, { fetchStream, editStream })(
+  StreamEdit
+);
