@@ -44,7 +44,10 @@ Twitch Like Application with React, Redux, React Router and Google Authenticatio
 
 ### Straming from OBS
 
-- start OBS ()
+- start OBS (Open Broadcaster Software)
+- go to settings > stream > custom stream server  
+  - `rtmp://localhost/live` 
+  - Stream key : the ID of the show stream path in the React App 
 
 # Reference
 
