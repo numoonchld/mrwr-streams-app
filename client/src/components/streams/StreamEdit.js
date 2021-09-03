@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchStream, editStream } from "../../actions";
+import Loader from "../Loader";
 import StreamForm from "./StreamForm";
 
 // const StreamEdit = ({ history, location, match, stream }) => {
@@ -21,7 +22,7 @@ class StreamEdit extends React.Component {
   render() {
     console.log(this.props);
     if (!this.props.stream) {
-      return <>Loading...</>;
+      return <Loader />
     }
 
     const { title, description } = this.props.stream;
