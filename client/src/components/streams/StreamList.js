@@ -23,7 +23,7 @@ const StreamListItem = ({ stream, currentUserID }) => (
     <div className="item">
       <AdminButtons stream={stream} currentUserID={currentUserID} />
       <i className="large middle aligned icon camera" />
-      <div className="content"> {stream.title} </div>
+      <div className="content"> <Link to={`/streams/${stream.id}`} className='header'>{stream.title}</Link> </div>
       <div className="description"> {stream.description}</div>
     </div>
   </React.Fragment>
